@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap');
+
+%mar25{
+    margin: 25px;
+}
+*{
+    font-family: 'Lato', sans-serif;;
+}
+
+%btnstyle{
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(151, 150, 163);
+    border: 1px solid rgb(151, 150, 163);
+    border-radius: 25px;
+}
+
+.wrapper{
+
+    .timer-wrap{
+        margin: auto ;
+        width: 200px;
+        background-color: antiquewhite;
+        border: 1px solid black;
+
+        .timer-data{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+    }
+    .wrap{
+        display: flex;
+        width: 500px;
+        margin: 0px auto;
+        align-items: center;
+        justify-content: center;
+
+        .btn-start-wrap,
+        .btn-stop-wrap,
+        .btn-pause-wrap{
+           @extend %mar25;
+        }
+
+        .btn-start,
+        .btn-stop,
+        .btn-pause{
+            @extend %btnstyle;
+
+            &:active{
+                background-color: rgb(119, 118, 121); ;
+            }
+        }
+    }
+}

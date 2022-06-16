@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="timer-wrap">
+    <p class="timer-data">
+      {{currentTimer | date: 'mm:ss' }}
+    </p>
+  </div>
+  <div class="wrap">
+      <div class="btn-start-wrap">
+        <button class="btn-start" (click)="onStartStop()">Start / Stop</button>
+      </div>
+      <div class="btn-pause-wrap">
+        <button class="btn-pause" (click)="onWait()">Wait</button>
+      </div>
+      <div class="btn-stop-wrap">
+        <button class="btn-stop" (click)="onReset()">Reset</button>
+      </div>
+  </div>
+</div>
