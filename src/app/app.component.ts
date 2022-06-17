@@ -26,7 +26,6 @@ export class AppComponent implements OnInit{
       this.click$.pipe(debounceTime(500))
     ),
     map(list => {
-      console.log(list.length)
       return list.length;
     }),
     filter((x) =>{ 
